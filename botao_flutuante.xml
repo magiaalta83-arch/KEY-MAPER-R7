@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fundo_botao"
+    android:padding="4dp">
+
+    <Button
+        android:id="@+id/botaoIcone"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="🔫"
+        android:textSize="20sp"
+        android:background="@drawable/circulo_botao"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:id="@+id/teclaAtribuida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESP"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="2dp"
+        android:background="#80000000"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"/>
+
+</LinearLayout>
