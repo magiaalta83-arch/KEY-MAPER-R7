@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo_tela"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⌨️ Editar Tecla"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_principal"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/nomeBotaoEdicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔫 Atirar"
+        android:textSize="18sp"
+        android:textColor="@color/texto_principal"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tecla atual:"
+        android:textSize="14sp"
+        android:textColor="@color/texto_secundario"/>
+
+    <TextView
+        android:id="@+id/teclaAtualTexto"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="SPACE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaria"
+        android:gravity="center"
+        android:background="@drawable/circulo_botao"
+        android:layout_marginVertical="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👉 Pressione a nova tecla no teclado..."
+        android:textSize="14sp"
+        android:textColor="@color/texto_secundario"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/botaoConfirmarTecla"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="✅ Confirmar"
+        android:backgroundTint="@color/sucesso"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/botaoCancelarTecla"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="❌ Cancelar"
+        android:backgroundTint="@color/fundo_card_elevado"
+        android:textColor="@color/texto_principal"
+        android:textSize="15sp"/>
+
+</LinearLayout>
