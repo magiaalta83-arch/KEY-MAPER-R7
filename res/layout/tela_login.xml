@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo_tela"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎮 Tecla do Mouse R7"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_principal"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/botaoLoginGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="🔑 Entrar com Google"
+        android:backgroundTint="#EA4335"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/botaoLoginGithub"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="🐙 Entrar com GitHub"
+        android:backgroundTint="#333333"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
