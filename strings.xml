@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tecla do Mouse R7</string>
+    
+    <!-- Tela Principal -->
+    <string name="servico_ativo">Serviço Ativo</string>
+    <string name="verificar_permissoes">Verifique permissões em Configurações → Acessibilidade</string>
+    <string name="configuracoes">⚙️ Configurações</string>
+    <string name="gerenciar_perfis">📂 Gerenciar Perfis</string>
+    <string name="como_usar">❓ Como Usar</string>
+    <string name="atalhos_teclado">F1 = Salvar | F2 = Carregar | F3 = Reset</string>
+    
+    <!-- Configurações -->
+    <string name="sensibilidade_mouse">🖱️ Sensibilidade do Mouse</string>
+    <string name="suavizacao_movimento">📐 Suavização do Movimento</string>
+    <string name="modo_operacao">🔘 Modo de Operação</string>
+    <string name="modo_camera">🎯 Modo Câmera — movimento = câmera do jogo</string>
+    <string name="modo_cursor">👆 Modo Cursor — mouse move o ponteiro</string>
+    <string name="salvar_aplicar">✅ Salvar e Aplicar</string>
+    <string name="restaurar_padroes">↩️ Restaurar Padrões</string>
+    <string name="voltar">❌ Voltar</string>
+    
+    <!-- Perfis -->
+    <string name="perfis_titulo">📂 Perfis de Jogo</string>
+    <string name="perfis_subtitulo">Salve configurações diferentes para cada jogo</string>
+    <string name="detecao_automatica">🔄 Detecção Automática</string>
+    <string name="seus_perfis">Seus Perfis</string>
+    <string name="criar_perfil">➕ Criar Novo Perfil</string>
+    <string name="excluir">Excluir</string>
+    
+    <!-- Editar Tecla -->
+    <string name="editar_tecla">⌨️ Editar Tecla</string>
+    <string name="tecla_atual">Tecla atual:</string>
+    <string name="pressione_nova_tecla">👉 Pressione a nova tecla no teclado...</string>
+    <string name="confirmar">✅ Confirmar</string>
+    <string name="cancelar">❌ Cancelar</string>
+    
+    <!-- Mensagens -->
+    <string name="permissoes_ok">✅ Permissões OK! Ative em Configurações → Acessibilidade</string>
+    <string name="posicoes_salvas">✅ Posições salvas!</string>
+    <string name="posicoes_resetadas">↩️ Posições resetadas!</string>
+    <string name="config_salvas">✅ Configurações salvas!</string>
+    <string name="restaurar_confirmar">Restaurar tudo ao padrão?</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="restaurado">↩️ Restaurado!</string>
+</resources>
