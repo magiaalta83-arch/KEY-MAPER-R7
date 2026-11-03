@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo_tela"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📂 Perfis de Jogo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_principal"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salve configurações diferentes para cada jogo"
+        android:textSize="13sp"
+        android:textColor="@color/texto_secundario"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Detecção Automática -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/fundo_card"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🔄 Detecção Automática"
+            android:textSize="15sp"
+            android:textColor="@color/texto_principal"/>
+
+        <Switch
+            android:id="@+id/switchDetecaoAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Lista de Perfis -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seus Perfis"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_principal"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaPerfis"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botões -->
+    <Button
+        android:id="@+id/botaoCriarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="➕ Criar Novo Perfil"
+        android:backgroundTint="@color/primaria"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/botaoVoltarPerfis"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="❌ Voltar"
+        android:backgroundTint="@color/fundo_card_elevado"
+        android:textColor="@color/texto_principal"
+        android:textSize="15sp"/>
+
+</LinearLayout>
