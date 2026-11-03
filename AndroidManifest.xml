@@ -2,10 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.seu.meumouse">
 
+    <!-- Permissões Existentes -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.GET_TASKS" />
+    
+    <!-- Permissões Novas Adicionadas -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
 
     <application
         android:name=".AppPrincipal"
@@ -14,9 +22,10 @@
         android:label="TeclaDoMouseR7"
         android:supportsRtl="true"
         android:theme="@style/TemaApp">
-        
+
+        <!-- Tela de Login — Abre primeiro -->
         <activity
-            android:name=".MainActivity"
+            android:name=".TelaLoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +33,12 @@
             </intent-filter>
         </activity>
 
+        <!-- Tela Principal — abre depois do login -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+        <!-- Demais Telas do App -->
         <activity
             android:name=".TelaConfiguracoesActivity"
             android:exported="false"/>
@@ -36,10 +51,11 @@
             android:name=".TelaPerfisActivity"
             android:exported="false"/>
 
+        <!-- Serviço de Acessibilidade -->
         <service
             android:name=".MeuServicoAcessibilidade"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
@@ -48,6 +64,7 @@
                 android:resource="@xml/acessibilidade_config" />
         </service>
 
+        <!-- Reiniciar ao ligar o celular -->
         <receiver
             android:name=".ReinicioReceiver"
             android:enabled="true"
@@ -57,6 +74,7 @@
             </intent-filter>
         </receiver>
 
+        <!-- Arquivos / Backup -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.arquivos"
@@ -66,5 +84,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/arquivo_provider" />
         </provider>
+
     </application>
+
 </manifest>
