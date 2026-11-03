@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: 📥 Baixar código
         uses: actions/checkout@v4
@@ -19,10 +19,12 @@ jobs:
           distribution: 'temurin'
 
       - name: 🔧 Preparar Gradle
-        run: chmod +x gradlew
+        run: |
+          chmod +x gradlew
+          ls -la
 
       - name: 🏗️ Gerar APK
-        run: ./gradlew assembleRelease
+        run: ./gradlew assembleRelease --stacktrace
 
       - name: 📤 Disponibilizar APK
         uses: actions/upload-artifact@v4
