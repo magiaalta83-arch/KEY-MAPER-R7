@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/borda_item"
+    android:padding="16dp"
+    android:layout_marginVertical="4dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/iconePerfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="🎮"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginEnd="16dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nomePerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Perfil"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"/>
+
+        <TextView
+            android:id="@+id/pacotePerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="com.jogo.exemplo"
+            android:textSize="12sp"
+            android:textColor="@color/texto_secundario"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/botaoExcluirPerfil"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:contentDescription="Excluir"
+        android:background="@null"
+        android:tint="@color/erro"/>
+
+</LinearLayout>
