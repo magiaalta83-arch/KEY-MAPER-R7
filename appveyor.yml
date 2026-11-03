@@ -1,0 +1,13 @@
+image: Ubuntu
+
+environment:
+  JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+
+build_script:
+  - echo "Verificando arquivos..."
+  - ls -la
+  - if [ -f "gradlew" ]; then chmod +x gradlew && ./gradlew assembleRelease; else echo "ERRO: Arquivo gradlew não encontrado!" && exit 1; fi
+
+artifacts:
+  - path: app/build/outputs/apk/release/app-release.apk
+    name: TeclaDoMouseR7-APK
