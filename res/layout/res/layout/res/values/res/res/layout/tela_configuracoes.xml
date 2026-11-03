@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Configurações Avançadas"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:textStyle="bold"/>
+
+        <!-- Seção: Sensibilidade -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🖱️ Sensibilidade do Mouse"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/barraSensibilidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:progress="15"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/valorSensibilidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.5x"
+            android:textSize="13sp"
+            android:textColor="#AAAAAA"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Seção: Modo do Mouse -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯 Modo do Mouse"
+            android:textSize="16sp"
+            android:textColor="#2196F3"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/grupoModoMouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/modoCamera"
+                android:text="🎮 Controlar Câmera do Jogo"
+                android:textColor="#FFFFFF"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/modoCursor"
+                android:text="🖱️ Movimentar Cursor na Tela"
+                android:textColor="#FFFFFF"/>
+        </RadioGroup>
+
+        <!-- Seção: Perfis -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📂 Perfis de Jogo"
+            android:textSize="16sp"
+            android:textColor="#FF9800"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/seletorPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gap="8dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/botaoSalvarPerfil"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="💾 Salvar"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/botaoCarregarPerfil"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="📂 Carregar"
+                android:backgroundTint="#2196F3"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/botaoNovoPerfil"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="➕ Novo"
+                android:backgroundTint="#FF9800"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <!-- Seção: Teclas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⌨️ Teclas Mapeadas"
+            android:textSize="16sp"
+            android:textColor="#E91E63"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔫 Atirar → ESPAÇO\n⬆️ Mover Cima → W\n⬇️ Mover Baixo → S\n⬅️ Mover Esquerda → A\n➡️ Mover Direita → D\n🦘 Pular → SHIFT\n🧎 Agachar → CTRL\n💾 Salvar → F1 | 📂 Carregar → F2 | ↩️ Reset → F3"
+            android:textSize="13sp"
+            android:textColor="#CCCCCC"
+            android:padding="14dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="24dp"
+            android:lineSpacingExtra="4dp"/>
+
+        <!-- Botões de Ação -->
+        <Button
+            android:id="@+id/botaoAplicarConfig"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="✅ Aplicar e Salvar"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/botaoRestaurarPadroes"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="↩️ Restaurar Padrões"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/botaoFecharConfig"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="✖️ Fechar"
+            android:backgroundTint="#444444"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+</ScrollView>
