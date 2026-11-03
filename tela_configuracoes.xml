@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_tela"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Configurações"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- 🖱️ Sensibilidade do Mouse -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🖱️ Sensibilidade do Mouse"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/valorSensibilidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.5x"
+            android:textSize="14sp"
+            android:textColor="@color/primaria"
+            android:layout_marginBottom="4dp"/>
+
+        <SeekBar
+            android:id="@+id/barraSensibilidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:progress="15"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- 📐 Suavização -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📐 Suavização do Movimento"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/valorSuavizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80%"
+            android:textSize="14sp"
+            android:textColor="@color/primaria"
+            android:layout_marginBottom="4dp"/>
+
+        <SeekBar
+            android:id="@+id/barraSuavizacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="95"
+            android:min="30"
+            android:progress="80"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- 🔘 Modo do Mouse -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔘 Modo de Operação"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/grupoModoMouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/modoCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎯 Modo Câmera — movimento do mouse = câmera do jogo"
+                android:textColor="@color/texto_principal"
+                android:checked="true"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/modoCursor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👆 Modo Cursor — mouse move o ponteiro na tela"
+                android:textColor="@color/texto_principal"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+        <!-- Botões -->
+        <Button
+            android:id="@+id/botaoAplicarConfig"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="✅ Salvar e Aplicar"
+            android:backgroundTint="@color/sucesso"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/botaoRestaurarPadroes"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="↩️ Restaurar Padrões"
+            android:backgroundTint="@color/aviso"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/botaoFecharConfig"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="❌ Voltar"
+            android:backgroundTint="@color/fundo_card_elevado"
+            android:textColor="@color/texto_principal"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+</ScrollView>
