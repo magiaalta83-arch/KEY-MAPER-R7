@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo_tela"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎮 Tecla do Mouse R7"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_principal"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mapeador de Teclas e Mouse"
+        android:textSize="14sp"
+        android:textColor="@color/texto_secundario"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/fundo_card"
+        android:padding="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✅ Serviço Ativo"
+            android:textSize="16sp"
+            android:textColor="@color/sucesso"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verifique permissões em Configurações → Acessibilidade"
+            android:textSize="12sp"
+            android:textColor="@color/texto_secundario"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botaoAbrirConfig"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="⚙️ Configurações"
+        android:backgroundTint="@color/primaria"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/botaoGerenciarPerfis"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="📂 Gerenciar Perfis"
+        android:backgroundTint="@color/secundaria"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/botaoInstrucoes"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="❓ Como Usar"
+        android:backgroundTint="@color/fundo_card_elevado"
+        android:textColor="@color/texto_principal"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F1 = Salvar | F2 = Carregar | F3 = Reset"
+        android:textSize="11sp"
+        android:textColor="@color/texto_desativado"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>
